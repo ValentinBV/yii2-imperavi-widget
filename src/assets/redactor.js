@@ -1460,7 +1460,7 @@
 						if (this.start) return;
 						if (this.rtePaste) return;
 
-						if ($(e.target).closest('.redactor-editor, .redactor-toolbar, .redactor-dropdown').size() !== 0)
+						if ($(e.target).closest('.redactor-editor, .redactor-toolbar, .redactor-dropdown').lenght !== 0)
 						{
 							return;
 						}
@@ -6910,7 +6910,7 @@
 							inValues = typeof observe['in'] != 'undefined' ? observe['in'] : false,
 							outValues = typeof observe['out'] != 'undefined' ? observe['out'] : false;
 
-						if ($current.closest(element).size() > 0)
+						if ($current.closest(element).lenght > 0)
 						{
 							this.observe.setDropdownProperties($item, inValues, outValues);
 						}
